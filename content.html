@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANDY FX MW Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222; /* Changed background color to dark */
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-right: 20px;
+            color: #3498db;
+        }
+
+        .help-button {
+            padding: 10px 15px;
+            color: #3498db;
+            background-color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .help-button:hover {
+            color: #3498db;
+            background-color: #3498db;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .welcome-section {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .crypto-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .welcome-content {
+            max-width: 600px;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .welcome-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #3498db;
+        }
+
+        .subheading {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            color: #3398db;
+            font-weight: bold;
+        }
+
+        .signup-login-section {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #3498db;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            color: #3498db;
+            border: 1px solid #3498;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            color: #3498db;
+            background-color: #3498db;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            color: #001f01;
+            background-color: #3498db;
+        }
+
+        a {
+            color: #001f01;
+            text-decoration: none;
+        }
+
+        #login-table {
+            display: none;
+        }
+
+        .web-info {
+            margin-top: 50px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .web-info h2 {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .web-info p {
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="title">VANDY FX MW</div>
+        
+    </header>
+    <main>
+        <div class="welcome-section">
+            <div class="crypto-background"></div>
+            <div class="welcome-content">
+                
+                <p class="subheading">EXPLORE THE WORLD OF CRYPTOCURRENCY TRADING WITH OUR SECURE AND USER-FRIENDLY PLATFORM.</p>
+            </div>
+        </div>
+        <div class="signup-login-section">
+            <form id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
+            <div id="login-table">
+                <form id="login-form">
+                    <label for="login-email">Enter Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+
+                    <label for="login-password">Enter Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+        </div>
+        
+        </div>
+        <div class="web-info">
+            <h2>why you should choose VANDY FX MW ? </h2>
+            
+    
+            <p>At Vandy Fx Mw, we're thrilled to welcome you to the forefront of the cryptocurrency revolution. Whether you're an experienced trader or just dipping your toes into the exciting world of digital assets, you've come to the right place.</p>
+        
+            <p>Key Features:</p>
+            <ul>
+                <li>Comprehensive Trading Platform: Our platform offers a seamless trading experience, allowing you to buy, sell, and trade a wide range of cryptocurrencies with ease.</li>
+                <li>Cutting-Edge Security: Your security is our top priority. We employ state-of-the-art security measures to safeguard your funds and personal information.</li>
+                <li>Market Insights and Analysis: Stay ahead of the curve with our in-depth market insights and analysis. We provide you with the tools and information you need to make informed trading decisions.</li>
+                <li>Responsive Customer Support: Have questions or need assistance? Our dedicated customer support team is here to help. We're committed to providing you with prompt and helpful assistance whenever you need it</li>
+            </ul>
+        
+            <p>Join us on the journey to explore the exciting world of cryptocurrency trading. </p>
+        </div>
+        
+    </main>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Your sign-up logic here...
+
+            // Assuming sign-up is successful, store the user's name and login status in localStorage
+            const userName = document.getElementById('name').value;
+            localStorage.setItem('userName', userName);
+            localStorage.setItem('isLoggedIn', 'true');
+
+            // Redirect to another page (welcome-page.html)
+            window.location.href = 'welcome-page.html';
+        });
+
+        document.getElementById('login-link').addEventListener('click', function() {
+            // Toggle the display of the log-in table
+            var loginTable = document.getElementById('login-table');
+            loginTable.style.display = (loginTable.style.display === 'none' || loginTable.style.display === '') ? 'block' : 'none';
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Your log-in logic here...
+
+            // Assuming log-in is successful, store the user's name and login status in localStorage
+            const userName = 'trickal'; // Replace with the actual user's name
+            localStorage.setItem('userName', userName);
+            localStorage.setItem('isLoggedIn', 'true');
+
+            // Redirect to another page (welcome-page.html)
+            window.location.href = 'welcome-page.html';
+        });
+    </script>
+</body>
+</html>

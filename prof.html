@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.3trade Tether - Upload Proof of Payment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* Add styles for the form */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Upload Proof of Payment</h1>
+    </header>
+
+    <section>
+        <!-- Update the form with input fields -->
+        <form onsubmit="submitForm(); return false;">
+            <label for="proofOfPayment">Proof of Payment Image (Minimum 10MB):</label>
+            <input type="file" id="proofOfPayment" accept="image/*" required>
+
+            <label for="binanceId">Binance ID / wallet address trc20:</label>
+            <input type="text" id="binanceId" required>
+
+           
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" required>
+
+            <!-- Remove loading div -->
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="note">Note: When sending to a wallet address, we deduct 1 from your total USDT.</p>
+    </section>
+
+    <script>
+        function submitForm() {
+            // Simulating a 3-second delay (adjust as needed)
+            setTimeout(function () {
+                // Redirect to waitlist.html
+                window.location.href = "waitlist.html";
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
